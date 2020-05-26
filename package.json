@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server dist",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "lint": "eslint src/",
-    "server": "webpack-dev-server --mode development --open --hot"
+    "server": "http-server dist"
   },
   "husky": {
     "hooks": {
