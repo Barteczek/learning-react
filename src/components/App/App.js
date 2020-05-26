@@ -10,6 +10,7 @@ class App extends React.Component {
     subtitle: PropTypes.node,
     lists: PropTypes.array,
   };
+  
   render() {
     const {title, subtitle, lists} = this.props;
     return (
