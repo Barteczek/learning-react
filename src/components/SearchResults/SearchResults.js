@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 import Icon from '../Icon/Icon';
 import Container from '../Container/Container';
-import { settings } from '../../data/dataStore';
+import {settings} from '../../data/dataStore';
 
 class SearchResults extends React.Component {
   static propTypes = {
-    title: PropTypes.node.isRequired,
+    title: PropTypes.string,
     icon: PropTypes.node,
     cards: PropTypes.array,
     addCard: PropTypes.func,
@@ -20,6 +20,7 @@ class SearchResults extends React.Component {
 
   render() {
     const {title, icon, cards} = this.props;
+
     return (
       <Container>
         <section className={styles.component}>
